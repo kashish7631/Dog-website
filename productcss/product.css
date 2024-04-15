@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.product_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background: #e9e2e2;
+  border: 2px solid rgb(3, 41, 1);
+  border-radius: 20px;
+  padding: 15px ;
+  margin: 50px auto 30px auto;
+  box-shadow: rgb(3, 41, 1) 1px 2px 16px 2px;
+}
+
+.product-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.product_container .product-image img{
+  border-radius: 15px;
+  border: 2px solid rgb(3, 41, 1);
+}
+
+.product_container .product-image img:hover{ 
+  transform: scale(1.05);
+cursor: pointer;}
+
+.product-discription{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-discription h1{
+  margin:0 20px 20px 20px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(3, 41, 1);
+}
+
+.des{
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 20px;
+  align-items: center;
+  text-align: justify;
+  margin: 10px 20px 0 10px;
+  color: rgba(34, 34, 34);
+  margin-bottom: 10px;
+}
+.month{
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.color{
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.dogprice{
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(70, 2, 2);
+  font-weight:800;
+text-transform: capitalize;
+cursor: pointer;
+margin-bottom: 10px;
+}
+
+.product-discription .btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.product-discription .btn button{
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(3, 41, 1);
+  color: #fff;
+  border-radius:5px ;
+}
+
+@media screen and (max-width:1000px){
+  .product-discription{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .product-image img{
+    width: 100%;
+  }
+  .product_container{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+

@@ -1,0 +1,151 @@
+body {height: 100vh;}
+*{box-sizing: border-box;}
+
+header{
+  background-color: #fff;
+  box-shadow:0px 5px 20px 0px rgba(34, 34, 34);
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.search{
+  background:rgb(182, 179, 179);
+  border-radius: 3px;
+  width:15%;
+  border: 0.5px solid rgb(59, 59, 59);
+}
+
+.search a {
+  text-decoration: none;
+  color: rgba(34, 34, 34);
+  font-size: 15px;
+}
+
+.search a i{
+  text-align: center;
+  padding: 7px;
+  font-size: 15px;
+}
+
+.search a input{
+  background-color:rgb(182, 179, 179) ;
+  border: 0px;
+  outline: none;
+  width: 60px;
+  
+}
+
+.cart a{
+  text-decoration: none;
+  color:  rgba(34, 34, 34);
+  font-size: 20px;
+  /* margin-right:20px; */
+}
+
+.cart a i{
+background:rgb(182, 179, 179) ;
+border-radius: 3px;
+border: 1px solid rgba(34, 34, 34);
+padding: 5px;}
+
+
+@media screen and (max-width:600px) {
+  .search a input{
+    display: none;
+  }
+  .search{
+    background-color: #fff;
+  }
+  .search a i{
+    background:rgb(182, 179, 179) ;
+    border-radius: 3px;
+    border: 1px solid rgba(34, 34, 34);
+  }
+}
+
+.container{
+  max-width: 1150px;
+  width: 100%;
+  /* background:blue ; */
+  margin: 50px auto;
+}
+
+.breed{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.breedcard{
+  background: #fff;
+  height: 470px;
+  width: 23%;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.breedcard:hover{
+  box-shadow: 0px 5px 20px 0px rgba(34, 34, 34);
+}
+
+.breedcard:last-child {margin-right:0px}
+
+.breedcard .img img{
+  max-width: 270px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.breedcard .dogname p{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.breedcard .price p{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding-top: 5px;
+}
+
+.breedcard .cartbutton{
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.breedcard .cartbutton a {
+  text-decoration: none;
+}
+
+.breedcard .cartbutton a button{
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  border-radius:9px ;
+}
+
+/* @media screen and (max-width:700) {
+  .breed{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+} */
